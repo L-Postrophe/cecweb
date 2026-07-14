@@ -1,0 +1,33 @@
+CEC Contact Form Setup
+======================
+
+This site now uses a static Formspree contact form, which works on GitHub Pages.
+
+1. Go to https://formspree.io/ and create a form.
+2. Set the form's recipient to your business email address.
+3. Copy the endpoint Formspree gives you. It will look like:
+   https://formspree.io/f/xayzabcd
+4. Open contact-info.js.
+5. Replace this placeholder:
+   https://formspree.io/f/YOUR_FORM_ID
+   with your real Formspree endpoint.
+
+Update contact info in one place
+--------------------------------
+Open contact-info.js to update:
+- phone numbers
+- email address
+- street address
+- Formspree endpoint
+
+Multiple phone numbers
+----------------------
+Add more numbers to the phones array like this:
+
+{
+  label: "Service",
+  display: "(000) 000-0002",
+  tel: "+10000000002"
+}
+
+The first phone number in the array is used for the main Call button.
